@@ -1,10 +1,10 @@
 
 public class RandomNumber
 {
-	public int GetANumber()
+	public int GetANumber(int high)
 	{
 		int number;
-		number = (int)(Math.random() * 10 ) + 1;
+		number = (int)(Math.random() * high ) + 1;
 		return number;
 	}
 }

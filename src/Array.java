@@ -19,7 +19,7 @@ public class Array
 			for (int j = 0; j < computerNumber.length; j++)
 				{
 					RandomNumber compNum = new RandomNumber();
-					computerNumber[i] = compNum.GetANumber();	
+					computerNumber[i] = compNum.GetANumber(sizeGame);	
 				}
 				count ++;
 				//System.out.print(roll);	
