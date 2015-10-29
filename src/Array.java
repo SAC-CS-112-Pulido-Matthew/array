@@ -14,12 +14,17 @@ public class Array
 		Scanner input = new Scanner (System.in);
 		int [] guess = new int [sizeGame];
 		int count = 0;
+		RandomNumber set = new RandomNumber();
+		int high = 0;
+		int low = 0;
+		high = set.SetHighNumber(high);
+		low = set.SetLowNumber(low);
 		for (int i = 0; i < wins.length; i++)
 		{
 			for (int j = 0; j < computerNumber.length; j++)
 				{
 					RandomNumber compNum = new RandomNumber();
-					computerNumber[i] = compNum.GetANumber(sizeGame, 0);	
+					computerNumber[i] = compNum.GetANumber(high, low);	
 				}
 				count ++;
 				//System.out.print(roll);	
